@@ -19,6 +19,8 @@ BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
+# XCP-ng: explicitly require epel-rpm-macros which is present in XS default build group
+BuildRequires:  epel-rpm-macros
 Requires:       python%{python3_version}dist(setuptools)
 Requires:       ninja-build
 
